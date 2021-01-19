@@ -92,8 +92,5 @@ class TestTextProcessing(unittest.TestCase):
         pred = tp.no_vowels(test_str)
         self.assertEqual(pred, "bcdfghjklmnpqrstvwxyz")
 
-# if __name__ == '__main__':
-#     test = TestTextProcessing()
-#     test.test_normalize()
-#     test.test_no_vowels()
+
     
