@@ -69,7 +69,7 @@ def no_vowels(input_string: str) -> str:
             ''W lv Pythn!'
     """
     temp_chars = []
-    vowels = {'a', 'e', 'i', 'o', 'u'}
+    vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
 
     for c in input_string:
         if c not in vowels:
