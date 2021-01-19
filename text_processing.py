@@ -37,10 +37,11 @@ def normalize(input_string: str) -> str:
     splited = temp.split()
 
     temp_chars = [0 for _ in range(2*len(splited) - 1)]
-    temp_chars[0] = splited[0]
+    for i in range(len(splited)):
+        temp_chars[i*2] = splited[i]
     for i in range(1, len(splited)):
         temp_chars[i*2 - 1] = ' '
-        temp_chars[i*2] = splited[i]
+        
     
 
     normalized_string = ''.join(temp_chars)
